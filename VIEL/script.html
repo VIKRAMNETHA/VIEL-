@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+</head>
+<body>
+  <script>
+    let userDetails = [  
+      { username: "viki", password: "123" },
+      { username: "varun", password: "1234" },
+      { username: "qwe", password: "1234664" },
+      { username: "van", password: "1235674" },
+      { username: "vaun", password: "123094" },
+      { username: "vn", password: "122334" },
+      { username: "vkkn", password: "123674" },
+      { username: "vtghun", password: "125634" },
+      { username: "vadvbkbn", password: "123344" },
+      { username: "vandnn", password: "123454" }
+    ];
+    let userNameprompt= prompt("please enter the username");
+    let passwordprompt= prompt("please enter the password");
+
+    function isUserValid(username, password) { 
+      for (let i = 0; i < userDetails.length; i++) {
+        if (userDetails[i].username === username && userDetails[i].password === password) {
+          return true;
+        }else{
+            return false;
+        }
+      }
+    }
+      function signin(username, password){
+      if(isUserValid(username, password)){
+        window.location= "index.html";
+      }
+      else{
+        alert("credentials")
+      }
+    }
+
+    signin(userNameprompt, passwordprompt);
+    
+  </script>
+</body>
+</html>

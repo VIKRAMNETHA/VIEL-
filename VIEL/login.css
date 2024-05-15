@@ -1,0 +1,73 @@
+/* Overall Styles */
+.login-signup-container {
+    position: absolute; /* Positions the container on top of the page content */
+    top: 50%; /* Centers the container vertically */
+    left: 50%; /* Centers the container horizontally */
+    transform: translate(-50%, -50%); /* Positions the container relative to its center point */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 40px; /* Inner padding */
+    border-radius: 5px; /* Rounded corners */
+    display: flex; /* Arranges login and signup forms side-by-side */
+    justify-content: space-between; /* Distributes forms with spacing */
+    width: 400px; /* Container width */
+    transition: all 0.3s ease-in-out; /* Smooth transition effects */
+  }
+  
+  .login-signup-container.hidden {
+    opacity: 0; /* Hides the container initially */
+    visibility: hidden; /* Makes the container invisible initially */
+  }
+  
+  /* Login Form Styles */
+  .login-form,
+  .signup-form {
+    text-align: center; /* Centers form content */
+    width: 100%; /* Takes up full width of the container */
+  }
+  
+  .login-form h2,
+  .signup-form h2 {
+    margin-bottom: 20px; /* Spacing below headings */
+  }
+  
+  .login-form input,
+  .signup-form input {
+    display: block; /* Makes inputs take up full width */
+    margin-bottom: 15px; /* Spacing between inputs */
+    padding: 10px;
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 3px; /* Rounded corners for inputs */
+    width: 100%; /* Makes inputs take up full width */
+  }
+  
+  .login-form button,
+  .signup-form button {
+    background-color: #4CAF50; /* Green button color */
+    color: white; /* White button text */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Removes button border */
+    border-radius: 3px; /* Rounded corners for button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: all 0.3s ease-in-out; /* Smooth button hover effect */
+  }
+  
+  .login-form button:hover,
+  .signup-form button:hover {
+    background-color: #3e8e41; /* Darker green on button hover */
+  }
+  
+  /* Links for Switching Forms */
+  .switch-to-signup,
+  .switch-to-login {
+    display: block; /* Makes links display as block elements */
+    margin-top: 10px; /* Spacing above links */
+    color: #4CAF50; /* Green link color */
+    text-decoration: none; /* Removes underline from links */
+    transition: all 0.3s ease-in-out; /* Smooth link hover effect */
+  }
+  
+  .switch-to-signup:hover,
+  .switch-to-login:hover {
+    color: #3e8e41; /* Darker green on link hover */
+  }
+  
